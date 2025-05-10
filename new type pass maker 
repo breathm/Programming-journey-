@@ -1,0 +1,20 @@
+print("your password is chracters at the index number that you enter thry must be 4 digit : ")
+
+import random
+
+
+words_= [
+    "ryxjdjdjdbk" , "fhajtxkejcd" , "fjshudbjdjc" , "gjshidbjdv" , "gjsjysg"
+]
+
+
+word = random.choice(words_)
+print(word)
+password = input("enter :")
+ogpass =''.join(word[int(i)] for i in password)
+
+apass = input("enter:") 
+if apass == ogpass :
+        print("unlock")
+if apass != ogpass :
+        print("no unlock")
